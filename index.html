@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Treloo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <section class="greeting">
+    <img class="background" src="./icons/background.png" alt="Background">
     <header class="header">
         <img class="logo" src="./icons/logo.svg" alt="Logo">
         <nav class="header_nav">
@@ -17,7 +23,6 @@
             <button class=blog_button>Blog</button>
         </nav>
     </header>
-    <img class="background" src="./icons/background.png" alt="Background">
     <main class="greeting_text">
         <h1 class="greeting_header">Discover Your Life, Travel Where You
             Want</h1>
@@ -27,7 +32,7 @@
     <div class="orders">
         <div class="order_buttons">
             <button class=order_button>
-                <img class="airplane" src="./icons/airplane_button.svg"
+                <img class="airplane_diagonal" src="./icons/airplane_blue.svg"
                      alt="Airplane">
                 Flight
             </button>
@@ -39,42 +44,56 @@
         </div>
         <div class="flight">
             <div class="flight_place">
-                <h5 class="flight_text">Living from</h5>
-                <select class="place_select">
-                    <option class="from_option">Dubai</option>
-                    <option class="from_option">New York</option>
-                    <option class="from_option">Kyiv</option>
-                    <option class="from_option">Brody</option>
-                </select>
+                <div class="place_inputs">
+                    <h5 class="place_text">Living from</h5>
+                    <select class="place_select">
+                        <option class="from_option">Dubai</option>
+                        <option class="from_option">New York</option>
+                        <option class="from_option">Kyiv</option>
+                        <option class="from_option">Brody</option>
+                    </select>
+                </div>
                 <img class="flight_image" src="./icons/airplane_grey.svg"
                      alt="Airplane">
-                <h5 class="flight_text">Going to</h5>
-                <select class="place_select">
-                    <option class="to_option">New York</option>
-                    <option class="to_option">Dubai</option>
-                    <option class="to_option">Kyiv</option>
-                    <option class="to_option">Brody</option>
-                </select>
+                <div class="place_inputs">
+                    <h5 class="place_text">Going to</h5>
+                    <select class="place_select">
+                        <option class="to_option">New York</option>
+                        <option class="to_option">Dubai</option>
+                        <option class="to_option">Kyiv</option>
+                        <option class="to_option">Brody</option>
+                    </select>
+                </div>
             </div>
             <div class="flight_date">
-                <h5 class="flight_text">Leave</h5>
-                <img class="airplane_2" src="./icons/airplane_blue.svg"
-                     alt="Airplane">
-                <input class="date_input"
-                       type="date"
-                       min="2023-01-01"
-                       max="2030-01-01"
-                />
+                <div class="date_inputs">
+                    <div class="date_text_image">
+                        <h5 class="date_text">Leave</h5>
+                        <img class="airplane_2" src="./icons/airplane_blue.svg"
+                             alt="Airplane">
+                    </div>
+                    <input class="date_input"
+                           type="date"
+                           value="2023-01-23"
+                           min="2023-01-01"
+                           max="2030-01-01"
+                    />
+                </div>
                 <img class="flight_image" src="./icons/calendar.svg"
-                     alt="Airplane">
-                <h5 class="flight_text">Return</h5>
-                <img class="airplane_3" src="./icons/airplane_blue.svg"
-                     alt="Airplane">
-                <input class="date_input"
-                       type="date"
-                       min="2023-01-01"
-                       max="2030-01-01"
-                />
+                     alt="Calendar">
+                <div class="date_inputs">
+                    <div class="date_text_image">
+                        <h5 class="date_text">Return</h5>
+                        <img class="airplane_3" src="./icons/airplane_blue.svg"
+                             alt="Airplane">
+                    </div>
+                    <input class="date_input"
+                           type="date"
+                           value="2023-01-14"
+                           min="2023-01-01"
+                           max="2030-01-01"
+                    />
+                </div>
             </div>
             <button class="search_button">
                 <img class="loop" src="./icons/loop.svg" alt="Loop">
@@ -91,34 +110,58 @@
     </div>
     <div class="offer_places">
         <div class="offer_place">
-            <img class="offer_place_img" src="./icons/place_1.png">
-            <span class="offer_type relax">Relax</span>
-            <span class="offer_time">3 Days, 3 Nights</span>
-            <span class="offer_date">14 FEB 2022</span>
-            <span class="offer_price">700$</span>
-            <span class="per_person">/Person</span>
+            <div class="offer_image">
+                <img class="offer_place_img" src="./icons/place_1.png">
+                <span class="offer_date">14 FEB 2022</span>
+            </div>
+            <div class="offer_upper_text">
+                <span class="offer_type relax">Relax</span>
+                <span class="offer_time">3 Days, 3 Nights</span>
+            </div>
             <h3 class="place_name">Laga Sea</h3>
-            <button class="offer_button">Book Now</button>
+            <div class="offer_price_button">
+                <div class="offer_price_person">
+                    <span class="offer_price">700$</span>
+                    <span class="per_person">/Person</span>
+                </div>
+                <button class="offer_button">Book Now</button>
+            </div>
         </div>
         <div class="offer_place">
-            <img class="offer_place_img" src="./icons/place_2.png">
-            <span class="offer_type adventure">Adventure</span>
-            <span class="offer_time">4 Days, 3 Nights</span>
-            <span class="offer_date">18 JUN 2022</span>
-            <span class="offer_price">400$</span>
-            <span class="per_person">/Person</span>
+            <div class="offer_image">
+                <img class="offer_place_img" src="./icons/place_2.png">
+                <span class="offer_date">18 JUN 2022</span>
+            </div>
+            <div class="offer_upper_text">
+                <span class="offer_type adventure">Adventure</span>
+                <span class="offer_time">4 Days, 3 Nights</span>
+            </div>
             <h3 class="place_name">Ansgar Scheffold</h3>
-            <button class="offer_button">Book Now</button>
+            <div class="offer_price_button">
+                <div class="offer_price_person">
+                    <span class="offer_price">400$</span>
+                    <span class="per_person">/Person</span>
+                </div>
+                <button class="offer_button">Book Now</button>
+            </div>
         </div>
         <div class="offer_place">
-            <img class="offer_place_img" src="./icons/place_3.png">
-            <span class="offer_type relax">Relax</span>
-            <span class="offer_time">7 Days, 6 Nights</span>
-            <span class="offer_date">22 DEC 2022</span>
-            <span class="offer_price">340$</span>
-            <span class="per_person">/Person</span>
+            <div class="offer_image">
+                <img class="offer_place_img" src="./icons/place_3.png">
+                <span class="offer_date">22 DEC 2022</span>
+            </div>
+            <div class="offer_upper_text">
+                <span class="offer_type relax">Relax</span>
+                <span class="offer_time">7 Days, 6 Nights</span>
+            </div>
             <h3 class="place_name">Lona X</h3>
-            <button class="offer_button">Book Now</button>
+            <div class="offer_price_button">
+                <div class="offer_price_person">
+                    <span class="offer_price">340$</span>
+                    <span class="per_person">/Person</span>
+                </div>
+                <button class="offer_button">Book Now</button>
+            </div>
         </div>
     </div>
 </section>
@@ -126,21 +169,21 @@
     <div class="about_picture">
         <img class="about_img" src="./icons/about_img.png"
              alt="Guy looking at fabulous coast">
-        <div class="statistic">
+        <div class="statistic" id="statistic_1">
             <span class="numbers">300+</span>
             <span class="text_under_number">DESTINATIONS</span>
         </div>
-        <div class="statistic">
+        <div class="statistic" id="statistic_2">
             <span class="numbers">5000+</span>
-            <span class="text_under_number">Tourists</span>
+            <span class="text_under_number">TOURISTS</span>
         </div>
-        <div class="statistic">
+        <div class="statistic" id="statistic_3">
             <span class="numbers">150+</span>
-            <span class="text_under_number">Hotels</span>
+            <span class="text_under_number">HOTELS</span>
         </div>
     </div>
-    <main>
-        <h2 class="headers">Travel Any Corner of The World With Us</h2>
+    <main class="about_article">
+        <h2 class="about_header">Travel Any Corner of The World With Us</h2>
         <p class="about_paragraph">Would you explore nature paradise in the
             world, let’s find the best destination in world with us, Would you
             explore nature paradise in the world, let’s find the best
@@ -160,77 +203,103 @@
     </div>
     <div class="destinations_places">
         <div class="destination_place">
-            <img class="destination_place_img" src="icons/recommended_1.png">
+            <div class="destination_img">
+                <img class="destination_place_img" src="icons/recommended_1.png">
+                <div class="destination_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">3.4</span>
+                </div>
+            </div>
             <h4 class="destination_name">Kina Mountain</h4>
-            <img class="landmark" src="./icons/landmark.svg" alt="landmark">
-            <span class="destination_country">Cambodia</span>
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">3.4</span>
+            <div class="destination_location">
+                <img class="landmark" src="./icons/landmark.svg" alt="landmark">
+                <span class="destination_country">Cambodia</span>
             </div>
         </div>
         <div class="destination_place">
-            <img class="destination_place_img" src="icons/recommended_2.png">
+            <div class="destination_img">
+                <img class="destination_place_img" src="icons/recommended_2.png">
+                <div class="destination_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">4.5</span>
+                </div>
+            </div>
             <h4 class="destination_name">Kina Mountain</h4>
-            <img class="landmark" src="./icons/landmark.svg" alt="landmark">
-            <span class="destination_country">Cambodia</span>
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">4.5</span>
+            <div class="destination_location">
+                <img class="landmark" src="./icons/landmark.svg" alt="landmark">
+                <span class="destination_country">Cambodia</span>
             </div>
         </div>
         <div class="destination_place">
-            <img class="destination_place_img" src="icons/recommended_3.png">
+            <div class="destination_img">
+                <img class="destination_place_img" src="icons/recommended_3.png">
+                <div class="destination_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">4.2</span>
+                </div>
+            </div>
             <h4 class="destination_name">Kina Mountain</h4>
-            <img class="landmark" src="./icons/landmark.svg" alt="landmark">
-            <span class="destination_country">Cambodia</span>
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">4.2</span>
+            <div class="destination_location">
+                <img class="landmark" src="./icons/landmark.svg" alt="landmark">
+                <span class="destination_country">Cambodia</span>
             </div>
         </div>
         <div class="destination_place">
-            <img class="destination_place_img" src="icons/recommended_4.png">
+            <div class="destination_img">
+                <img class="destination_place_img" src="icons/recommended_4.png">
+                <div class="destination_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">3.5</span>
+                 </div>
+            </div>
             <h4 class="destination_name">Kina Mountain</h4>
-            <img class="landmark" src="./icons/landmark.svg" alt="landmark">
-            <span class="destination_country">Cambodia</span>
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">3.5</span>
+            <div class="destination_location">
+                <img class="landmark" src="./icons/landmark.svg" alt="landmark">
+                <span class="destination_country">Cambodia</span>
             </div>
         </div>
     </div>
 </section>
-<sections class="reviews">
+<section class="reviews">
     <div class="user_reviews">
         <article class="review">
             <img class="quote" src="./icons/quote.svg" alt="quote">
-            <p class="review_text">Our trip to Morocco was truly a onece in a
-                lifetime experience and we are so grateful to everyone that
-                made it happen seamlessly. Our travel planner, Jaouad, was
-                increadible.</p>
-            <span class="user_name">-Vand D</span>
-            <span class="user_status">Happy Treloo</span>
-            <img class="user_img" src="./icons/user_1.png" alt="user_img">
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">4.5</span>
+            <div class="review_info">
+                <p class="review_text">Our trip to Morocco was truly a onece in a
+                    lifetime experience and we are so grateful to everyone that
+                    made it happen seamlessly. Our travel planner, Jaouad, was
+                    increadible.</p>
+                <span class="user_name">-Vand D</span>
+                <span class="user_status">Happy Treloo</span>
+            </div>
+            <div class="user">
+                <img class="user_img" src="./icons/user_1.png" alt="user_img">
+                <div class="review_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">4.5</span>
+                </div>
             </div>
         </article>
         <article class="review">
             <img class="quote" src="./icons/quote.svg" alt="quote">
-            <p class="review_text">Our trip to Morocco was truly a onece in a
-                lifetime experience and we are so grateful to everyone that
-                made it happen seamlessly. Our travel planner, Jaouad, was
-                increadible.</p>
-            <span class="user_name">-Tru Vio</span>
-            <span class="user_status">Happy Treloo</span>
-            <img class="user_img" src="./icons/user_2.png" alt="user_img">
-            <div class="rating">
-                <img class="star" src="./icons/star.svg" alt="Star">
-                <span class="rank">4.9</span>
+            <div class="review_info">
+                <p class="review_text">Our trip to Morocco was truly a onece in a
+                    lifetime experience and we are so grateful to everyone that
+                    made it happen seamlessly. Our travel planner, Jaouad, was
+                    increadible.</p>
+                <span class="user_name">-Tru Vio</span>
+                <span class="user_status">Happy Treloo</span>
+            </div>
+            <div class="user">
+                <img class="user_img" src="./icons/user_2.png" alt="user_img">
+                <div class="review_rating">
+                    <img class="star" src="./icons/star.svg" alt="Star">
+                    <span class="rank">4.9</span>
+                </div>
             </div>
         </article>
+    </div>
+    <div class="select_buttons">
         <button class="review_select">
             <img class="back_forward" src="./icons/back.svg" alt="back">
         </button>
@@ -238,13 +307,15 @@
             <img class="back_forward" src="./icons/forward.svg" alt="forward">
         </button>
     </div>
-</sections>
+</section>
 <section class="discount">
     <img class="discount_img" src="./icons/discount_background.png"
          alt="background">
-    <h2 class="discount_header">Don’t Miss The 50% Discount if You register
-        Today</h2>
-    <button class="discount_button">Register Today</button>
+    <div class="discount_info">
+        <h2 class="discount_header">Don’t Miss The 50% Discount if You register
+            Today</h2>
+        <button class="discount_button">Register Today</button>
+    </div>
 </section>
 <footer class="footer">
     <span class="rights_info">© 2022 Treloo LLC - All right reserved.</span>
