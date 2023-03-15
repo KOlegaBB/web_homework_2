@@ -83,7 +83,7 @@ body {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 82%;
 }
 
 .order_buttons {
@@ -722,7 +722,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .discount {
     position: relative;
-    width: 80%;
+    width: 82%;
     margin: 0 auto 120px auto;
     border-radius: 100px;
     overflow: hidden;
