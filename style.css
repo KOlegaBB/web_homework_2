@@ -94,6 +94,7 @@ body {
     border-radius: 25px 25px 0 0;
     width: 24%;
     margin-bottom: -1px;
+    z-index: 1;
 }
 
 .order_button {
@@ -135,7 +136,6 @@ body {
     border-radius: 0 50px 50px 50px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     padding: 60px 0 60px 0;
-    z-index: -1;
 }
 
 .flight_place {
