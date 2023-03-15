@@ -496,6 +496,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 20px;
     line-height: 30px;
     color: white;
+    box-shadow: 4px 4px 25px rgba(62, 134, 245, 0.4);
 }
 
 .recommended_destinations {
