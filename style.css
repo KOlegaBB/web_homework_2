@@ -83,7 +83,7 @@ body {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 80%;
 }
 
 .order_buttons {
@@ -132,9 +132,11 @@ body {
 .flight {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: white;
     border-radius: 0 50px 50px 50px;
+    padding: 60px 0 60px 0;
 }
 
 .flight_place {
@@ -143,8 +145,6 @@ body {
     justify-content: space-around;
     border: 2px solid rgba(172, 172, 172, 0.5);
     border-radius: 25px;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .flight_date {
@@ -153,8 +153,6 @@ body {
     justify-content: space-around;
     border: 2px solid rgba(172, 172, 172, 0.5);
     border-radius: 25px;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 
@@ -233,8 +231,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: rgba(62, 134, 245, 0.8);
     border-radius: 65px;
     border: none;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .loop {
@@ -293,7 +289,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .offer_places {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 82%;
     gap: 20px;
 }
@@ -302,6 +299,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: white;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     border-radius: 50px;
+    width: 32%;
 }
 
 .offer_image {
@@ -550,7 +548,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .destinations_places {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 82%;
     gap: 20px;
 }
@@ -739,16 +737,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
     width: 80%;
     margin: 0 auto 120px auto;
+    border-radius: 100px;
+    overflow: hidden;
 }
 
 .discount_img {
+    position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
 .discount_info {
-    position: absolute;
-    top: 15%;
+    padding: 114px 0 114px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -762,6 +763,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 72px;
     text-align: center;
     color: white;
+    margin-top: 0;
 }
 
 .discount_button {
