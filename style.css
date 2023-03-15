@@ -121,11 +121,7 @@ body {
     transform: rotate(315deg);
 }
 
-.order_button:hover {
-    background-color: white;
-}
-
-.order_button:focus {
+.clicked_order_button {
     background-color: rgba(62, 134, 245, 0.2);
 }
 
@@ -278,10 +274,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 10px 0;
 }
 
-.special_offers_button:focus {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
+.clicked_special_offers_button {
     color: white;
     background-color: #3E86F5;
 }
@@ -510,16 +503,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 331px;
 }
 
-.destinations_buttons_buttons {
-    background: white;
+.destinations_buttons {
+    background: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
-    padding: 0 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .destinations_button {
@@ -536,10 +526,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 10px 0;
 }
 
-.destinations_button:focus {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+.clicked_destinations_button {
     color: #3E86F5;
     background-color: white;
 }
